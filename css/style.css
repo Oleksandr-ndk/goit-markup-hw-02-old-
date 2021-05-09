@@ -44,38 +44,30 @@ a:hover {
   color: #212121;
 }
 
-.nav-list {
+.nav-list,
+.header-contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.studio {
-  color: var(--accent-color);
-}
-
-.portfolio {
+.nav-item {
   color: var(--primary-text-color);
 }
 
-.contacts {
-  color: var(--primary-text-color);
-}
-
-.header-contacts{
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.head-mail {
+.nav-item:hover,
+.nav-item:focus {
   color: var(--accent-color);
 }
 
-.head-tel {
+.head-contact {
   color: var(--paragraph-text-color);
+}
+
+.head-contact:hover,
+.head-contact:focus {
+  color: var(--accent-color);
 }
 
 /* Hero */
@@ -181,9 +173,18 @@ a:hover {
   color: #FFFFFF;
 }
 
-.footer-mail,
-.footer-tel {
+.phis-address:hover,
+.phis-address:focus {
+  color: var(--accent-color);
+}
+
+.footer-contact {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--accent-color);
 }
 
 /* Portfolio */
@@ -200,17 +201,10 @@ a:hover {
   letter-spacing: 0.03em;
 }
 
-.button-title-all {
+.button-title:hover,
+.button-title:focus {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 .example-title {
