@@ -3,6 +3,9 @@
   --paragraph-text-color: #757575;
   --accent-color: #2196F3;
   --primary-bg-color: #FFFFFF;
+  --background-button-color: #F5F4FA;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
+  --footer-bg-color: #2F303A;
 }
 
 .page {
@@ -20,28 +23,24 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 /* index.html */
 
 /* Header */
 
 .page-header {
-  background-color: #FFFFFF;
+  background-color: var(--primary-bg-color);
 }
 
 .logo {
   color: var(--accent-color);
-  font-family: Raleway;
-  font-weight: bold;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
 
 .logo-header-color {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .nav-list,
@@ -54,6 +53,10 @@ a:hover {
 
 .nav-item {
   color: var(--primary-text-color);
+}
+
+.nav-item.current {
+  color: var(--accent-color);
 }
 
 .nav-item:hover,
@@ -73,11 +76,11 @@ a:hover {
 /* Hero */
 
 .hero-section {
-  background: #2F303A;
+  background: var(--footer-bg-color);
 }
 
 .hero-title {
-  color: #FFFFFF;
+  color: var(--primary-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;  
@@ -87,10 +90,8 @@ a:hover {
 }
 
 .hero-section-button {
-  color: #FFFFFF;
+  color: var(--primary-bg-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   font-family: inherit;
 }
 
@@ -98,7 +99,7 @@ a:hover {
 
 .features .title {
   color: var(--primary-text-color);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -107,7 +108,7 @@ a:hover {
 
 .features .paragraph {
   color: var(--paragraph-text-color);
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -119,7 +120,7 @@ a:hover {
 .work-title,
 .team-title {
   color: var(--primary-text-color);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -129,7 +130,7 @@ a:hover {
 /* Team */
 
 .team-section {
-  background: #F5F4FA;
+  background: var(--background-button-color);
 }
 
 .teammates-title {
@@ -143,7 +144,7 @@ a:hover {
 
 .teammates-proffesion {
   color: var(--paragraph-text-color);
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -153,24 +154,24 @@ a:hover {
 /* Footer */
 
 .footer-section {
-  background: #2F303A;
+  background: var(--footer-bg-color);
 }
 
 .logo-footer-color {
-  color: #FFFFFF;
+  color: var(--primary-bg-color);
 }
 
 .footer-contacts {
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
 .phis-address {
-  color: #FFFFFF;
+  color: var(--primary-bg-color);
 }
 
 .phis-address:hover,
@@ -179,7 +180,7 @@ a:hover {
 }
 
 .footer-contact {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contact-color);
 }
 
 .footer-contact:hover,
@@ -193,6 +194,7 @@ a:hover {
 
 .button-title {
   color: var(--primary-text-color);
+  background: var(--background-button-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -209,7 +211,7 @@ a:hover {
 
 .example-title {
   color: var(--primary-text-color);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -217,7 +219,7 @@ a:hover {
 
 .example-paragraph {
   color: var(--paragraph-text-color);
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
